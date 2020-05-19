@@ -1,4 +1,4 @@
-import React, { setState, useEffect, Fragment } from 'react'
+import React, { useState, useEffect, Fragment } from "react";
 import axios from 'axios'
 import Airline from './Airline'
 import styled from 'styled-components'
@@ -30,7 +30,7 @@ const Grid = styled.div`
 `
 
 const Airlines = () => {
-  const [airlines, setAirlines] = useStatus([]);
+  const [airlines, setAirlines] = useState([]);
 
   useEffect(() => {
     // 全てのairlinsをAPIから取得する
